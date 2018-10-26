@@ -1,0 +1,11 @@
+#chat_zone{
+	width: 80%;
+	height: 250px;
+	background-color: grey;
+	overflow: auto;
+}
+#extract{
+	width: 80%;
+	height: 75px;
+	border: 1px solid orange; 
+}
