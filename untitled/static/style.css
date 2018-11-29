@@ -3,9 +3,48 @@
 	height: 250px;
 	background-color: grey;
 	overflow: auto;
+	margin-top: 150px;
+	margin-left: 110px;
 }
 #extract{
 	width: 80%;
 	height: 75px;
 	border: 1px solid orange; 
+	overflow: auto;
+	margin-left: 50px.
+}
+#client-side{
+
+	text-align: left;
+
+}
+#server-side{
+
+	text-align: right;
+}
+#landing-page{
+	background-color: none;
+}
+nav{
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: fixed;
+    float: right;
+}
+body{
+	background-image: url('https://images.pexels.com/photos/317356/pexels-photo-317356.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+	background-size: cover;
+}
+#bar{
+	background-color: #2d3436;
+	border: 1px solid black;
+}
+.jumbotron{
+	text-align: center;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	margin-top: 150px;
+	background-color: transparent;
 }

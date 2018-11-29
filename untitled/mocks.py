@@ -5,7 +5,7 @@ class Search():
 
 
     @classmethod
-    def get_extract(self, keyword):
+    def get_article(self, keyword):
 
         self.url1="https://fr.wikipedia.org/w/api.php?action=query&list=search&srsearch={}&utf8&format=json"
         self.url2='https://fr.wikipedia.org/w/api.php?action=query&titles={}&prop=extracts&exsentences=3&format=json&explaintext'
