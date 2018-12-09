@@ -1,26 +1,60 @@
 #chat_zone{
 	width: 80%;
-	height: 250px;
-	background-color: grey;
+	height: 300px;
+	background-color: white;
 	overflow: auto;
 	margin-top: 150px;
 	margin-left: 110px;
+	
+	
 }
 #extract{
 	width: 80%;
 	height: 75px;
-	border: 1px solid orange; 
+	border-top: 1px solid grey; 
+	border-left: transparent;
 	overflow: auto;
 	margin-left: 50px.
 }
-#client-side{
+/*.client-side{
 
-	text-align: left;
+	float: right;
+	width: 60%;
+	height: 95px;
 
+}*/
+
+.client-side {
+
+	background: #05728f;
+	color: white;
+	font-size:14px;
+	width:25%;
+	margin-left: 650px;
+	border-radius: 5px;
+	text-align: center;
+	height: 25px
 }
-#server-side{
+/*.server-side{
 
-	text-align: right;
+	float:left;
+	width: 60%;
+	height: 150px;
+	overflow:auto;
+}*/
+
+.server-side {
+
+	font-size:14px;
+	background: #ebebeb;
+	color:#646464;
+	width: 60%;
+	border-radius: 5px;
+}
+
+iframe{
+
+	background: #ebebeb;
 }
 #landing-page{
 	background-color: none;
@@ -37,6 +71,9 @@ body{
 	background-image: url('https://images.pexels.com/photos/317356/pexels-photo-317356.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
 	background-size: cover;
 }
+img{
+	display: inline;
+}
 #bar{
 	background-color: #2d3436;
 	border: 1px solid black;
@@ -47,4 +84,16 @@ body{
 	padding-bottom: 48px;
 	margin-top: 150px;
 	background-color: transparent;
+}
+.messaging{
+	background-color: white;
+	width: 80%;
+	height: 450px;
+	margin-top: 150px;
+	margin-left: 110px;
+
+}
+#message{
+	padding: 35px;
+	height: 450px;
 }

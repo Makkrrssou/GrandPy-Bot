@@ -1,17 +1,17 @@
 
-
-
 $("form").submit(function(event){
 	var extractVal=$("#extract").val();
-	$("#chat_zone").append("Client dit : "+"<br>"+extractVal+"<br>");
+	$("#extract").remove(extractVal);
+	$("#message").append('<p class="client-side">'+extractVal+'</p>');
 
 	
 	$.getJSON('/processing',{
 
 		a:extractVal
 	},function(data){
-		$("#chat_zone").append("GrandPy-Bot dit : "+"<br>"+data.result+"<br>");
-		$("#chat_zone").append('<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q='+extractVal+'&key=AIzaSyD4oIexrzcN8LaIRaxszGHPMgRgPLCPxNE" allowfullscreen></iframe> ')
+
+		$("#message").append('<p class="server-side">'+data.result+'</p>');
+		$("#message").append('<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q='+extractVal+'&key=AIzaSyD4oIexrzcN8LaIRaxszGHPMgRgPLCPxNE" allowfullscreen></iframe> ')
 		
 	})
 	.done(function(){
