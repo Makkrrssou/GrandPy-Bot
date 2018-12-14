@@ -12,8 +12,6 @@ def home():
 @app.route('/processing')
 def get_information():
 	
-	# if request.method=='POST':
-	#extr=request.form['extract']
 	extr=request.args.get('a','Pas de réponse reçue', type=str)
 	aws=Search.get_article(extr)
 
